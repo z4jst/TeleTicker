@@ -135,13 +135,12 @@ A：删除对应的 `.session` 文件即可
 A：需要修改为使用bot_token方式登录
 
 ## 📁 文件结构
-
-
+```
 TeleTicker/
 ├── TeleTicker.py    # 主程序文件
 ├── account_*.session     # 自动生成的会话文件（首次运行后）
 └── README.md            # 说明文档
-
+```
 
 ## 🤝 贡献指南
 
