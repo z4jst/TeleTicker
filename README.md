@@ -16,19 +16,12 @@
 - **隐私保护**：自动脱敏显示手机号
 - **稳定运行**：崩溃自动恢复+网络重连
 
-## 📦 安装依赖(Debian12)
-python3 -m venv venv              # 环境配置
-source venv/bin/activate          # 激活虚拟环境
-pip install -r requirements.txt   # 然后在虚拟环境中安装依赖
-python TeleTicker.py              # 运行脚本
-deactivate                        # 完成后退出虚拟环境
-
 ## ⚙️ 配置教程
 
 ### 1. 基础配置
 
 编辑脚本中的全局配置部分：
-
+```
 python
 GLOBAL_CONFIG = {
     "api_id": 1234567,              # 从 https://my.telegram.org/app 获取
@@ -38,12 +31,12 @@ GLOBAL_CONFIG = {
     "current_time_updates": [0],    # 在每分钟的第0秒更新
     "next_minute_updates": [55]    # 在每分钟的第55秒预更新下一分钟
 }
-
+```
 
 ### 2. 账号配置
 
 在`ACCOUNTS`列表中添加您的账号：
-
+```
 python
 ACCOUNTS = [
     {   # 极简配置
@@ -57,7 +50,7 @@ ACCOUNTS = [
         "next_minute_updates": [50, 55]
     }
 ]
-
+```
 
 ### 3. Emoji分类说明
 
@@ -70,11 +63,14 @@ ACCOUNTS = [
 
 ## 🚀 使用教程
 
-### 首次运行
-
-bash
-python TeleTicker.py
-
+### 运行(Debian12)
+```
+python3 -m venv venv              # 环境配置
+source venv/bin/activate          # 激活虚拟环境
+pip install -r requirements.txt   # 然后在虚拟环境中安装依赖
+python TeleTicker.py              # 运行脚本 或者可以 chmod +x TeleTicker.py && ./TeleTicker.py
+deactivate                        # 完成后退出虚拟环境
+```
 
 按提示输入：
 1. 短信验证码
