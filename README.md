@@ -72,7 +72,7 @@ ACCOUNTS = [
 ### 首次运行
 
 bash
-python tg_name_updater.py
+python TeleTicker.py
 
 
 按提示输入：
@@ -140,8 +140,8 @@ A：需要修改为使用bot_token方式登录
 ## 📁 文件结构
 
 
-telegram-name-updater/
-├── tg_name_updater.py    # 主程序文件
+TeleTicker/
+├── TeleTicker.py    # 主程序文件
 ├── account_*.session     # 自动生成的会话文件（首次运行后）
 └── README.md            # 说明文档
 
