@@ -21,6 +21,16 @@
 bash
 pip install telethon==1.28.0
 
+## 环境配置
+python3 -m venv venv
+# 激活虚拟环境
+source venv/bin/activate
+# 然后在虚拟环境中安装依赖
+pip install -r requirements.txt
+# 运行脚本
+python TeleTicker.py
+# 完成后退出虚拟环境
+deactivate
 
 ## ⚙️ 配置教程
 
