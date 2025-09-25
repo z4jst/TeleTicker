@@ -16,21 +16,12 @@
 - **隐私保护**：自动脱敏显示手机号
 - **稳定运行**：崩溃自动恢复+网络重连
 
-## 📦 安装依赖
-
-bash
-pip install telethon==1.28.0
-
-## 环境配置
-python3 -m venv venv
-# 激活虚拟环境
-source venv/bin/activate
-# 然后在虚拟环境中安装依赖
-pip install -r requirements.txt
-# 运行脚本
-python TeleTicker.py
-# 完成后退出虚拟环境
-deactivate
+## 📦 安装依赖(Debian12)
+python3 -m venv venv              # 环境配置
+source venv/bin/activate          # 激活虚拟环境
+pip install -r requirements.txt   # 然后在虚拟环境中安装依赖
+python TeleTicker.py              # 运行脚本
+deactivate                        # 完成后退出虚拟环境
 
 ## ⚙️ 配置教程
 
