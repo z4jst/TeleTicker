@@ -66,9 +66,11 @@ ACCOUNTS = [
 ### 运行(Debian12)
 ```
 python3 -m venv venv              # 环境配置
+screen                            # 进入screen保持命令运行
 source venv/bin/activate          # 激活虚拟环境
 pip install -r requirements.txt   # 然后在虚拟环境中安装依赖
 python TeleTicker.py              # 运行脚本 或者可以 chmod +x TeleTicker.py && ./TeleTicker.py
+ctrl + a + d                      # 保留screen至后台运行
 deactivate                        # 完成后退出虚拟环境
 ```
 
